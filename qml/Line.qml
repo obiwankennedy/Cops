@@ -14,24 +14,24 @@ Item
     Canvas {
         id: line
         anchors.fill: parent
-        onPaint : {
-            var heightOfArrow = app.height/20
-            var lineW = 4
-            var ctx = getContext("2d")
-            ctx.beginPath()
-            ctx.moveTo(x1,y1)
-            ctx.lineTo(x2,y2)
-            ctx.fillStyle = gradient
-            ctx.fill();
 
-            ctx.fillStyle = "red"
+        onPaint : {
+            var ctx = getContext("2d")
+            ctx.strokeStyle = "red"
+            ctx.lineWidth = root.penWidth
+            ctx.beginPath()
+            ctx.lineCap = "round"
+            ctx.moveTo(root.x1,root.y1)
+            ctx.lineTo(root.x2,root.y2)
+            ctx.closePath()
+            ctx.stroke();
         }
     }
 
 
 
 
-    MouseArea {
+   /* MouseArea {
         anchors.fill: parent
         property int previousX : 0
         property int previousY : 0
@@ -44,5 +44,5 @@ Item
             root.x += mouse.x-previousX
             root.y += mouse.y-previousY
         }
-    }
+    }*/
 }

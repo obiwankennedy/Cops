@@ -1,9 +1,22 @@
-<!DOCTYPE RCC>
-<RCC version="1.0">
+<RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
-        <file>Page1.qml</file>
-        <file>Page1Form.ui.qml</file>
+        <file>qml/main.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>qml/PolaroidImage.qml</file>
+        <file>qml/PostIt.qml</file>
+        <file>qml/Line.qml</file>
+        <file>img/ZoomImageAcrylic_Sealed_Natural_Cork12966619163851296661916_1.jpg</file>
+        <file>img/cork_fin.png</file>
+        <file>img/Lynn.jpg</file>
+        <file>img/Rick_Darcy.jpg</file>
+        <file>img/Mj.jpg</file>
+        <file>img/Khu_Ying_Kim_square.jpg</file>
+        <file>img/Guillermo_Gonzalvez.jpg</file>
+        <file>img/Denis_Aquillian.jpg</file>
+        <file>img/Daniel_Fox.png</file>
+        <file>img/Anpaytoo_Yepa_square.jpg</file>
+        <file>img/max_ohara_bis4.jpg</file>
+        <file>img/Christopher_Atkins.jpg</file>
+        <file>qml/MovableImage.qml</file>
     </qresource>
 </RCC>

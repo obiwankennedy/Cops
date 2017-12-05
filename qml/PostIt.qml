@@ -4,14 +4,12 @@ import QtQuick.Controls 2.1
 Rectangle
 {
     id: root
-    property alias source: img.source
     property int size: 920
     property alias text: footer.text
 
     TextArea {
         id: footer
         anchors.bottom: parent.bottom
-        anchors.top: img.bottom
         anchors.left: parent.left
         anchors.right: parent.right
         color: "black"
