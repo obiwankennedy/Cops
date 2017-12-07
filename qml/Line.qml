@@ -27,22 +27,4 @@ Item
             ctx.stroke();
         }
     }
-
-
-
-
-   /* MouseArea {
-        anchors.fill: parent
-        property int previousX : 0
-        property int previousY : 0
-        onPressed: {
-            previousX = mouse.x
-            previousY = mouse.y
-            parent.focus = true
-        }
-        onPositionChanged: {
-            root.x += mouse.x-previousX
-            root.y += mouse.y-previousY
-        }
-    }*/
 }

@@ -18,5 +18,11 @@
         <file>img/max_ohara_bis4.jpg</file>
         <file>img/Christopher_Atkins.jpg</file>
         <file>qml/MovableImage.qml</file>
+        <file>font/Amplify_PersonalUseOnly.ttf</file>
+        <file>font/Chocolate Covered Raindrops.ttf</file>
+        <file>font/Chocolate Covered Raindrops BOLD.ttf</file>
+        <file>font/Chocolate Covered Raindrops Hollow.ttf</file>
+        <file>font/DancingScript-Regular.otf</file>
+        <file>font/Red Velvet - Demo.ttf</file>
     </qresource>
 </RCC>

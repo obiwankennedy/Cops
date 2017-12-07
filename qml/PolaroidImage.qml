@@ -9,6 +9,9 @@ Item {
     property real ratio : 92/73
     property alias text: footer.text
     property alias text2: footer2.text
+    property int fontSize: 16
+    property alias font: footer.font
+    property alias font2: footer2.font
 
     height: size+7*marge
     width: size*ratio+2*marge
@@ -34,10 +37,23 @@ Item {
             anchors.bottom: parent.bottom
             anchors.top: img.bottom
             anchors.left: parent.left
-            anchors.right: parent.right
             color: "black"
-            font.pixelSize: 2*root.marge
+            font.pixelSize: root.fontSize
             horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+            font.bold: true
+        }
+        Text {
+            id: footer3
+            anchors.bottom: parent.bottom
+            anchors.top: img.bottom
+            anchors.left: footer.right
+            anchors.right: footer2.left
+            color: "black"
+            text: "-"
+            visible: root.text2.length > 0
+            font.pixelSize: root.fontSize
+            horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             font.bold: true
         }
@@ -45,10 +61,9 @@ Item {
             id: footer2
             anchors.bottom: parent.bottom
             anchors.top: img.bottom
-            anchors.left: parent.left
             anchors.right: parent.right
             color: "black"
-            font.pixelSize: 2*root.marge
+            font.pixelSize: root.fontSize
             horizontalAlignment: Text.AlignRight
             verticalAlignment: Text.AlignVCenter
             font.bold: true

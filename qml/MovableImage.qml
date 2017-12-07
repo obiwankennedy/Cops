@@ -4,56 +4,18 @@ import QtGraphicalEffects 1.0
 Item {
     id:root
     property alias source: img.source
-    property int size: 920
-    property int marge: size/18.4
-    property real ratio : 92/73
-    property alias text: footer.text
-    property alias text2: footer2.text
 
     height: size+7*marge
     width: size*ratio+2*marge
-    Rectangle
+
+    Image
     {
-        id: pola
-
+        id: img
         anchors.fill: parent
-        color: "white"
-
-        Image
-        {
-            id: img
-            x:marge
-            y:marge
-            width: root.size*ratio;// sourceSize.width;
-            height: root.size;
-            clip: true
-            fillMode: Image.PreserveAspectCrop
-        }
-        Text {
-            id: footer
-            anchors.bottom: parent.bottom
-            anchors.top: img.bottom
-            anchors.left: parent.left
-            anchors.right: parent.right
-            color: "black"
-            font.pixelSize: 2*root.marge
-            horizontalAlignment: Text.AlignLeft
-            verticalAlignment: Text.AlignVCenter
-            font.bold: true
-        }
-        Text {
-            id: footer2
-            anchors.bottom: parent.bottom
-            anchors.top: img.bottom
-            anchors.left: parent.left
-            anchors.right: parent.right
-            color: "black"
-            font.pixelSize: 2*root.marge
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            font.bold: true
-        }
+        clip: true
+        fillMode: Image.PreserveAspectCrop
     }
+
     MouseArea {
         anchors.fill: parent
         property int previousX : 0
@@ -81,13 +43,13 @@ Item {
     }
 
     DropShadow {
-        anchors.fill: pola
+        anchors.fill: img
         horizontalOffset: 8
         verticalOffset: 8
         radius: 8.0
         samples: 17
         color: "#80000000"
-        source: pola
+        source: img
         //rotation: -30
     }
 }
