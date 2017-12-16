@@ -24,5 +24,11 @@
         <file>font/Chocolate Covered Raindrops Hollow.ttf</file>
         <file>font/DancingScript-Regular.otf</file>
         <file>font/Red Velvet - Demo.ttf</file>
+        <file>img/logo/1500-rolisteam.png</file>
+        <file>img/logo/logoProjets-R2.png</file>
+        <file>font/impact.ttf</file>
+        <file>font/_TOP_SECRET.otf</file>
+        <file>qml/Press.qml</file>
+        <file>img/a mod.png</file>
     </qresource>
 </RCC>

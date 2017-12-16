@@ -5,15 +5,11 @@ Item {
     id:root
     property alias source: img.source
 
-    height: size+7*marge
-    width: size*ratio+2*marge
-
     Image
     {
         id: img
         anchors.fill: parent
-        clip: true
-        fillMode: Image.PreserveAspectCrop
+        fillMode: Image.PreserveAspectFit
     }
 
     MouseArea {
