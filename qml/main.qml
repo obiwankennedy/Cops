@@ -210,34 +210,34 @@ ApplicationWindow {
                 x: window.widthScreen*0.4
                 y:20
 
-                source: "qrc:/img/a mod.png"
+                source: "qrc:/img/imgCops/tonfa.jpg"
             }
             PolaroidImage {//Hopital
                 x: window.widthScreen*0.4
                 y:20
                 size: 200
-                text: "hopital"
-                source: "qrc:/img/a mod.png"
+                text: "Los Angeles General hospital (home)"
+                source: "qrc:/img/imgCops/hospital.jpg"
             }
             MovableImage {//Radiographie cote cassees
                 x: window.widthScreen*0.4
                 y:20
                 //text:"radio"
-                source: "qrc:/img/a mod.png"
+                source: "qrc:/img/imgCops/radio.jpg"
             }
             PolaroidImage {//Menottes
                 x: window.widthScreen*0.4
                 y:20
                 size: 200
                 text: "menottes"
-                source: "qrc:/img/a mod.png"
+                source: "qrc:/img/imgCops/menottes.jpg"
             }
             PolaroidImage {//Babouin
                 x: window.widthScreen*0.4
                 y:20
                 size: 200
                 text: "babouin"
-                source: "qrc:/img/a mod.png"
+                source: "qrc:/img/imgCops/babouin.jpg"
             }
             PostIt {
                 id: denis1
@@ -382,21 +382,21 @@ ApplicationWindow {
                 y: 511
                 size:200
                 text: "Mexique"
-                source: "qrc:/img/a mod.png"
+                source: "qrc:/img/imgCops/mexico.jpg"
             }
             PolaroidImage {//Gangers
                 x: window.widthScreen*0.4
                 y:20
                 size: 200
                 text: "Gangers"
-                source: "qrc:/img/a mod.png"
+                source: "qrc:/img/imgCops/gang.jpg"
             }
             PolaroidImage {//Voiture défoncée
                 x: window.widthScreen*0.4
                 y:20
                 size: 200
-                text: "Voiture défoncée"
-                source: "qrc:/img/a mod.png"
+                text: "Ma voiture de service"
+                source: "qrc:/img/imgCops/accident.jpeg"
             }
             PolaroidImage {//Dossier censuré
                 x: 1183
@@ -424,7 +424,7 @@ ApplicationWindow {
                 y:20
                 size: 200
                 text: "Poubelle"
-                source: "qrc:/img/a mod.png"
+                source: "qrc:/img/imgCops/trash-bin.jpg"
             }
             PostIt {
                 x: 505
@@ -482,12 +482,82 @@ ApplicationWindow {
 
             PolaroidImage {
                 id: headshot
-                x: 515
+                x: 360
                 y: 200
                 size: 200
                 source: "qrc:/img/Lynn.jpg"
                 text: " Lynn Gray-Rike"
                 text2: "HeadShot "
+            }
+            MovableImage {//Cible
+                x: window.widthScreen*0.4
+                y:20
+                //size: 200
+                //text: "Entrainement matinal"
+                source: "qrc:/img/imgCops/targetheadshot.jpg"
+            }
+            PolaroidImage {//Head shot de CS
+                x: 750
+                y: 767
+                size: 200
+                text: "Motif sur masque"
+                source: "qrc:/img/imgCops/logo_headshot.jpg"
+            }
+            PolaroidImage {//Moto
+                x: 1140
+                y: 333
+                size: 200
+                text: " Ma titine"
+                source: "qrc:/img/imgCops/moto.jpg"
+            }
+            PolaroidImage {//Flingue 1
+                x: 30
+                y:761
+                size: 200
+                text: " Gangster"
+                source: "qrc:/img/imgCops/compactUni_arme2.jpg"
+            }
+            PolaroidImage {//Flingue 2
+                x: 378
+                y:743
+                size: 200
+                text: " Paradise"
+                source: "qrc:/img/imgCops/falcon_arme1.jpg"
+            }
+            MovableImage {//Diplôme
+                x: window.widthScreen*0.4
+                y:20
+                //text:"radio"
+                source: "qrc:/img/imgCops/lapd-diploma-1-638.jpg"
+            }
+            PostIt {
+                x: 828
+                y: 258
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Appeler Papa!"
+                color: "yellow"
+            }
+
+            PostIt {
+                x: 1469
+                y: 442
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "-Lait et Graine de Soja\n-Tofu à Aubergine\n-Rhubarbe\n-Champignon\n-Pousses d'épinard"
+                color: "green"
+            }
+
+            PostIt {
+                x: 1323
+                y: 99
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Livrer Prostectus à Damask\n de recrutement COPS"
+                color: "pink"
             }
         }
         Item {//Max + Haut du PS

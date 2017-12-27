@@ -30,5 +30,30 @@
         <file>font/_TOP_SECRET.otf</file>
         <file>qml/Press.qml</file>
         <file>img/a mod.png</file>
+        <file>img/imgCops/874_af10.gif</file>
+        <file>img/imgCops/503674Bureaux.jpg</file>
+        <file>img/imgCops/babouin.jpg</file>
+        <file>img/imgCops/CarteLA.jpg</file>
+        <file>img/imgCops/cop_car_by_beastlykyd.jpg</file>
+        <file>img/imgCops/cops_1.jpg</file>
+        <file>img/imgCops/hospital.jpg</file>
+        <file>img/imgCops/lapd_by_koshelkov-d56l8he.jpg</file>
+        <file>img/imgCops/masque_neutre.jpg</file>
+        <file>img/imgCops/menottes.jpg</file>
+        <file>img/imgCops/tonfa.jpg</file>
+        <file>img/imgCops/voiture_denis.jpg</file>
+        <file>img/imgCops/radio.jpg</file>
+        <file>img/imgCops/accident.jpeg</file>
+        <file>img/imgCops/gang.jpg</file>
+        <file>img/imgCops/mexico.jpg</file>
+        <file>img/imgCops/trash-bin.jpg</file>
+        <file>img/imgCops/radio_bullet1.jpg</file>
+        <file>img/imgCops/radio_bullet2.jpg</file>
+        <file>img/imgCops/compactUni_arme2.jpg</file>
+        <file>img/imgCops/falcon_arme1.jpg</file>
+        <file>img/imgCops/logo_headshot.jpg</file>
+        <file>img/imgCops/moto.jpg</file>
+        <file>img/imgCops/targetheadshot.jpg</file>
+        <file>img/imgCops/lapd-diploma-1-638.jpg</file>
     </qresource>
 </RCC>

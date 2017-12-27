@@ -4,7 +4,8 @@ import QtGraphicalEffects 1.0
 Item {
     id:root
     property alias source: img.source
-
+    implicitHeight: img.implicitHeight
+    implicitWidth:  img.implicitWidth
     Image
     {
         id: img
@@ -46,6 +47,6 @@ Item {
         samples: 17
         color: "#80000000"
         source: img
-        //rotation: -30
+
     }
 }
