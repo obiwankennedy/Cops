@@ -23,19 +23,21 @@ Item {
             parent.focus = true
         }
         onPositionChanged: {
-            root.x += mouse.x-previousX
-            root.y += mouse.y-previousY
+            root.x += (mouse.x-previousX)*root.scale
+            root.y += (mouse.y-previousY)*root.scale
+            previousX = mouse.x
+            previousY = mouse.y
             console.log(root.text+" x:"+root.x+" y:"+root.y)
         }
         onWheel: {
             if(wheel.angleDelta.y>0)
             {
-                parent.rotation -= 5
+                parent.scale -= 0.1
             }
             else
-                parent.rotation += 5
+                parent.scale += 0.1
 
-            console.log(root.text+" rotation:"+parent.rotation)
+            console.log(" rotation:"+parent.scale)
         }
     }
 

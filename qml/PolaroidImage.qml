@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.7
 import QtGraphicalEffects 1.0
 
 Item {
@@ -31,15 +31,17 @@ Item {
             height: root.size;
             clip: true
             fillMode: Image.PreserveAspectCrop
+            horizontalAlignment: Image.AlignLeft
         }
         Text {
             id: footer
             anchors.bottom: parent.bottom
             anchors.top: img.bottom
             anchors.left: parent.left
+            width: root.text2.length > 0 ? implicitWidth : parent.width
             color: "black"
-            font.pixelSize: root.fontSize
-            horizontalAlignment: Text.AlignLeft
+            font.pixelSize:  root.fontSize
+            horizontalAlignment: root.text2.length > 0 ? Text.AlignLeft : Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             font.bold: true
         }
@@ -79,8 +81,8 @@ Item {
             parent.focus = true
         }
         onPositionChanged: {
-            root.x += mouse.x-previousX
-            root.y += mouse.y-previousY
+            root.x += (mouse.x-previousX)*root.scale
+            root.y += (mouse.y-previousY)*root.scale
             console.log(root.text+" x:"+root.x+" y:"+root.y)
         }
         onWheel: {

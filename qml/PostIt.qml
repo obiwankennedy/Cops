@@ -9,17 +9,21 @@ Item {
     property alias text: footer.text
     property alias font: footer.font
     property alias color: rect.color
+    property alias hAlign: footer.horizontalAlignment
+    property alias vAlign: footer.verticalAlignment
     Rectangle
     {
         id:rect
         anchors.fill: parent
         TextArea {
             id: footer
-            anchors.bottom: parent.bottom
+            /*anchors.bottom: parent.bottom
             anchors.left: parent.left
-            anchors.right: parent.right
+            anchors.right: parent.right*/
+            anchors.fill:parent
+
             color: "black"
-            font.pixelSize: 2*root.marge
+          //  font.pixelSize: 2*root.marge
             horizontalAlignment: Text.AlignLeft
             verticalAlignment: Text.AlignVCenter
             //font.bold: true

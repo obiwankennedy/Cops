@@ -34,7 +34,6 @@
         <file>img/imgCops/503674Bureaux.jpg</file>
         <file>img/imgCops/babouin.jpg</file>
         <file>img/imgCops/CarteLA.jpg</file>
-        <file>img/imgCops/cop_car_by_beastlykyd.jpg</file>
         <file>img/imgCops/cops_1.jpg</file>
         <file>img/imgCops/hospital.jpg</file>
         <file>img/imgCops/lapd_by_koshelkov-d56l8he.jpg</file>
@@ -55,5 +54,25 @@
         <file>img/imgCops/moto.jpg</file>
         <file>img/imgCops/targetheadshot.jpg</file>
         <file>img/imgCops/lapd-diploma-1-638.jpg</file>
+        <file>img/imgCops/hecate.jpg</file>
+        <file>img/imgCops/house_max.jpg</file>
+        <file>img/imgCops/tigre.jpg</file>
+        <file>img/imgCops/trench_coat.jpg</file>
+        <file>img/cops-jdr-lapd-commissariat.jpg</file>
+        <file>font/newspaper.dump/fonts/CloisterBlack.ttf</file>
+        <file>font/newspaper.dump/images/image_1.jpg</file>
+        <file>img/imgCops/cessna.jpg</file>
+        <file>img/imgCops/califorinia.jpg</file>
+        <file>img/imgCops/dessinenfant.jpg</file>
+        <file>img/imgCops/hollywood.jpeg</file>
+        <file>img/imgCops/logo_police.png</file>
+        <file>img/imgCops/los-angelesPanneau.jpg</file>
+        <file>img/imgCops/voiture_cops.jpg</file>
+        <file>img/imgCops/car_crash_2.jpg</file>
+        <file>img/imgCops/cadet_Police.jpg</file>
+        <file>img/imgCops/license.png</file>
+        <file>img/imgCops/applicationForm.JPG</file>
+        <file>img/imgCops/speedfire.jpg</file>
+        <file>img/imgCops/speedfire.png</file>
     </qresource>
 </RCC>

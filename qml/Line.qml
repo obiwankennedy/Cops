@@ -6,9 +6,11 @@ Item
     id: root
     property real x1: 0
     property real y1: 0
-    property real x2: 0
-    property real y2: 0
+
+    property var xlist: []
+    property var ylist: []
     property real penWidth: 0
+    property string color: "red"
 
 
     Canvas {
@@ -17,13 +19,15 @@ Item
 
         onPaint : {
             var ctx = getContext("2d")
-            ctx.strokeStyle = "red"
+            ctx.strokeStyle = root.color
             ctx.lineWidth = root.penWidth
             ctx.beginPath()
             ctx.lineCap = "round"
             ctx.moveTo(root.x1,root.y1)
-            ctx.lineTo(root.x2,root.y2)
-            ctx.closePath()
+            for(var i = 0; i<xlist.length;++i)
+            {
+                ctx.lineTo(xlist[i],ylist[i])
+            }
             ctx.stroke();
         }
     }
