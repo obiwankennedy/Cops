@@ -973,6 +973,62 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
             }
         }
         Item {
+            id: bodycount
+            x: 4000
+            y: 4000
+            ColumnLayout {
+                RowLayout {
+                    PostIt {
+                        x: 1231
+                        y: -16
+                        rotation: 5
+                        width: 200
+                        height: 150
+                        font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                        text: "Headshot"
+                        color: "blue"
+                    }
+                }
+                RowLayout {
+                    PostIt {
+                        x: 1231
+                        y: -16
+                        rotation: 5
+                        width: 200
+                        height: 150
+                        font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                        text: "Captain Poubelle"
+                        color: "green"
+                    }
+                }
+                RowLayout {
+                    PostIt {
+                        x: 1231
+                        y: -16
+                        rotation: 5
+                        width: 200
+                        height: 150
+                        font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                        text: "Lucky Target"
+                        color: "pink"
+                    }
+                }
+                RowLayout {
+                    PostIt {
+                        x: 1231
+                        y: -16
+                        rotation: 5
+                        width: 200
+                        height: 150
+                        font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                        text: "Columbo"
+                        color: "yellow"
+                    }
+                }
+            }
+        }
+
+        Item {
             id: imageFinale
             anchors.fill: parent
             Behavior on opacity {
@@ -989,6 +1045,12 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 y: -200
                 scale: 0.25
                 source: "qrc:/img/imgCops/logo_police.png"
+            }
+            MovableImage {//Los Angeles Logo
+                x: 3600
+                y: 800
+//                scale: 0.25
+                source: "qrc:/img/imgCops/.png"
             }
             MovableImage {//Panneau Los Angeles
                 x: 5987
