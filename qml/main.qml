@@ -685,6 +685,15 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 //text: "Motif sur masque"
                 source: "qrc:/img/imgCops/logo_headshot.jpg"
             }
+            PostIt {
+                x: 1580
+                y: -200
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Horraire COPS:\nNuit: 23h-7h\nMatin: 7h-15h\nAprès-midi: 15h23h"
+                color: "blue"
+            }
             PolaroidImage {//Moto
                 x: 1610
                 y: 10
@@ -974,10 +983,31 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
         }
         Item {
             id: bodycount
-            x: 4000
+            x: 4800
             y: 4000
+            width: window.widthScreen
+            height: window.heightScreen
+            Rectangle {
+                x: 679
+                y: 50
+                id:title
+                width: 800
+                height: 150
+                color: "grey"
+                Text {
+                    anchors.centerIn: parent
+                    font { family: topsecret.name; pixelSize: 60;   }//capitalization: Font.AllLowercase weight: Font.Bold;
+                    text: "Body Count"
+                }
+            }
             ColumnLayout {
+                anchors.top: title.bottom
+                anchors.left: parent.left
+                anchors.bottom:parent.bottom
+                anchors.right: parent.right
                 RowLayout {
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.maximumWidth: 150+15*150
                     PostIt {
                         x: 1231
                         y: -16
@@ -986,34 +1016,67 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                         height: 150
                         font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
                         text: "Headshot"
-                        color: "blue"
+                        color: "lightblue"
+                    }
+                    Repeater {
+                        model: 15
+                        MovableImage {//Cible
+                            Layout.maximumHeight: 150
+                            Layout.maximumWidth: 150
+                            Layout.alignment: Qt.AlignLeft
+                            source: "qrc:/img/imgCops/logo_headshot.jpg"
+                        }
                     }
                 }
                 RowLayout {
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.maximumWidth: 150+5*150
                     PostIt {
                         x: 1231
                         y: -16
-                        rotation: 5
+                        rotation: -5
                         width: 200
                         height: 150
                         font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
                         text: "Captain Poubelle"
                         color: "green"
                     }
+                    Repeater {
+                        model: 5
+                        MovableImage {//Cible
+                            Layout.maximumHeight: 150
+                            Layout.maximumWidth: 150
+                            Layout.alignment: Qt.AlignLeft
+                            source: "qrc:/img/imgCops/123.png"
+                        }
+                    }
                 }
                 RowLayout {
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.maximumWidth: 150+3*150
                     PostIt {
                         x: 1231
                         y: -16
-                        rotation: 5
+                        rotation: -10
                         width: 200
                         height: 150
                         font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
                         text: "Lucky Target"
                         color: "pink"
                     }
+                    Repeater {
+                        model: 3
+                        MovableImage {//Cible
+                            Layout.maximumHeight: 150
+                            Layout.maximumWidth: 150
+                            Layout.alignment: Qt.AlignLeft
+                            source: "qrc:/img/imgCops/tonfa.jpg"
+                        }
+                    }
                 }
                 RowLayout {
+                    Layout.alignment: Qt.AlignLeft
+                    Layout.maximumWidth: 150+9*150
                     PostIt {
                         x: 1231
                         y: -16
@@ -1023,6 +1086,15 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                         font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
                         text: "Columbo"
                         color: "yellow"
+                    }
+                    Repeater {
+                        model: 9
+                        MovableImage {//Cible
+                            Layout.maximumHeight: 150
+                            Layout.maximumWidth: 150
+                            Layout.alignment: Qt.AlignLeft
+                            source: "qrc:/img/imgCops/snipe.png"
+                        }
                     }
                 }
             }
@@ -1041,16 +1113,16 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 scale: 1.4
             }
             MovableImage {//insigne LAPD
-                x: 2500
-                y: -200
+                x: 2430
+                y: -550
                 scale: 0.25
                 source: "qrc:/img/imgCops/logo_police.png"
             }
             MovableImage {//Los Angeles Logo
-                x: 3600
-                y: 800
-//                scale: 0.25
-                source: "qrc:/img/imgCops/.png"
+                x: 4900
+                y: 1120
+                scale: 4.0
+                source: "qrc:/img/imgCops/logo_la.png"
             }
             MovableImage {//Panneau Los Angeles
                 x: 5987
@@ -1062,6 +1134,12 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 y: 3300
                 scale: 0.4
                 source: "qrc:/img/imgCops/hollywood.jpeg"
+            }
+            MovableImage {//Gob
+                x: -295
+                y: 3804
+                scale: 0.7
+                source: "qrc:/img/imgCops/carte-la-gob---gp.jpg"
             }
         }
 
@@ -1238,8 +1316,8 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
             color: "blue"
             x1: 3930
             y1: 4420
-            xlist: [2000,2500,2899,3100,5000,5150,6850,7550,8200]
-            ylist: [3000,2110,1450,710 ,2100,3600,3100,1800,1000]
+            xlist: [2000,2500,2899,3150,5150,5150,5600,6850,7550,8200]
+            ylist: [3000,2110,1450,950 ,2100,3700,4100,3200,1800,1000]
             penWidth: 8
         }
 
