@@ -101,7 +101,7 @@ ApplicationWindow {
         Item {
             id: page1
             Behavior on opacity {
-                NumberAnimation{duration: root.opacityTime}
+                NumberAnimation{duration: window.opacityTime}
             }
             MovableImage {
                 x: 50
@@ -140,7 +140,7 @@ ApplicationWindow {
             width: widthScreen
             height: heightScreen
             Behavior on opacity {
-                NumberAnimation{duration: root.opacityTime}
+                NumberAnimation{duration: window.opacityTime}
             }
             /*MouseArea {
                 anchors.fill: parent
@@ -261,6 +261,70 @@ ApplicationWindow {
                 source: "qrc:/img/cops-jdr-lapd-commissariat.jpg"
             }
 
+            PostIt {
+                x: 1328
+                y: -824
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "LAPD: SAD\n La police des polices…"
+                color: "green"
+            }
+            PostIt {
+                x: 519
+                y: 348
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "LAPD: L'Hydra\n Les gardes-côtes…"
+                color: "green"
+            }
+            PostIt {
+                x: 2506
+                y: -513
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "LAPD: K-9\n Les hommes-bêtes…"
+                color: "steelblue"
+            }
+            PostIt {
+                x: 965
+                y: 1554
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "LAPD: Le SWAT\n presque aussi badass que les COPS\n sauf PAPA…"
+                color: "steelblue"
+            }
+            PostIt {
+                x: 688
+                y: 1248
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "LAPD: ASD\n Air Support Division\nOn attend tjs nos frappes aériennes…"
+                color: "steelblue"
+            }
+            PostIt {
+                x: 550
+                y: 23
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "LAPD: La metropolitan\n Cible d'entrainement\n des gangers."
+                color: "steelblue"
+            }
+            PostIt {
+                x: 642
+                y: -241
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "LAPD: Nadiv\n Narcotic Division\n les pro de la carte\n de crédit et du mirroir."
+                color: "steelblue"
+            }
+
         }
         Item {//Denis + Bas du C
             id: page3
@@ -269,7 +333,7 @@ ApplicationWindow {
             width: window.widthScreen
             height: window.heightScreen
             Behavior on opacity {
-                NumberAnimation{duration: root.opacityTime}
+                NumberAnimation{duration: window.opacityTime}
             }
 
             MovableImage {//license pilote
@@ -515,7 +579,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
             width: window.widthScreen
             height: window.heightScreen
             Behavior on opacity {
-                NumberAnimation{duration: root.opacityTime}
+                NumberAnimation{duration: window.opacityTime}
             }
             MovableImage {//Dossier censuré
                 x: -982
@@ -553,30 +617,25 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 text: "Ma voiture de service"
                 source: "qrc:/img/imgCops/voiture_cops.jpg"
             }
-            PolaroidImage {//Wanted Voiture
-                x: window.widthScreen*0.4
-                y:20
-                size: 200
-                text: "Wanted Voiture"
-                source: "qrc:/img/a mod.png"
-            }
-            PolaroidImage {//Wanted Cartel
-                x: window.widthScreen*0.4
-                y:20
-                size: 200
-                text: "Wanted Cartel"
-                source: "qrc:/img/a mod.png"
+            MovableImage {//Wanted Voiture
+                x: 671
+                y: -961
+              //  size: 200
+               // text: "Wanted Voiture"
+                source: "qrc:/img/imgCops/wanted_car.png"
+                scale: 0.2
+
             }
             PolaroidImage {//Poubelle
                 x: 987
-                y:796
+                y: 838
                 size: 200
                 text: "Poubelle"
                 source: "qrc:/img/imgCops/trash-bin.jpg"
             }
             PostIt {
-                x: 1689
-                y: 568
+                x: -370
+                y: -356
                 width: 200
                 height: 150
                 font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
@@ -590,6 +649,51 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 height: 150
                 font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
                 text: "Aller au Mexique"
+                color: "green"
+            }
+            PostIt {
+                x: -661
+                y: 6
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Affaire:\nLe casseur de la machine\nà café."
+                color: "steelblue"
+            }
+            PostIt {
+                x: -768
+                y: 548
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Livre:\nMa fille adoptive est une\npsychopathe."
+                color: "steelblue"
+            }
+            PostIt {
+                x: -781
+                y: 898
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Livre:\nLes dangers du Gob."
+                color: "steelblue"
+            }
+            PostIt {
+                x: -668
+                y: 1340
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "LAPD: JSD\nProtection de l'enfance."
+                color: "steelblue"
+            }
+            PostIt {
+                x: 1411
+                y: -234
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Kurt Rike\n patron du SWAT et papa de Lynn…"
                 color: "green"
             }
             Press {
@@ -659,11 +763,11 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
             width: window.widthScreen
             height: window.heightScreen
             Behavior on opacity {
-                NumberAnimation{duration: root.opacityTime}
+                NumberAnimation{duration: window.opacityTime}
             }
             MovableImage {//Diplôme
-                x: 1147
-                y: 331
+                x: 1210
+                y: 447
                 scale: 1.7
                 //text:"radio"
                 source: "qrc:/img/imgCops/lapd-diploma-1-638.jpg"
@@ -686,14 +790,15 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 source: "qrc:/img/imgCops/logo_headshot.jpg"
             }
             PostIt {
-                x: 1580
-                y: -200
+                x: 1636
+                y: -408
                 width: 200
                 height: 150
                 font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
-                text: "Horraire COPS:\nNuit: 23h-7h\nMatin: 7h-15h\nAprès-midi: 15h23h"
-                color: "blue"
+                text: "Horaire COPS:\nNuit: 23h-7h\nMatin: 7h-15h\nAprès-midi: 15h23h"
+                color: "dodgerblue"
             }
+
             PolaroidImage {//Moto
                 x: 1610
                 y: 10
@@ -798,7 +903,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
             width: window.widthScreen
             height: window.heightScreen
             Behavior on opacity {
-                NumberAnimation{duration: root.opacityTime}
+                NumberAnimation{duration: window.opacityTime}
             }
             MovableImage {//Livret de famille de max
                 x: 1618
@@ -810,6 +915,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 y: 300
                 width: 200
                 height: 150
+                rotation: -5
                 font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
                 text: "Born in the USA!"
                 color: "yellow"
@@ -821,7 +927,25 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 height: 150
                 font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
                 text: "Comme le dirait\nma femme!"
-                color: "yellow"
+                color: "dodgerblue"
+            }
+            PostIt {
+                x: 598
+                y: 829
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Solde du compte bancaire\n13 000 $"
+                color: "steelblue"
+            }
+            PostIt {
+                x: 12
+                y: 1136
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Affaire:\n Le tueur à moto!"
+                color: "dodgerblue"
             }
             PostIt {
                 x: 417
@@ -830,7 +954,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 height: 150
                 font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
                 text: "By the book"
-                color: "yellow"
+                color: "orange"
             }
             MovableImage {//Dessin d'enfant
                 x: 1141
@@ -851,6 +975,13 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 text: " Compagne"
                 source: "qrc:/img/imgCops/hecate.jpg"
             }
+            PolaroidImage {//flag on ireland
+                x: 1463
+                y:13
+                size: 200
+                text: " Radio, Bière Foot!"
+                source: "qrc:/img/imgCops/irish_tricolour-1.jpg"
+            }
             PolaroidImage {//Flingue 1
                 x: -5
                 y: -7
@@ -862,12 +993,57 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
             PostIt {
                 x: 1231
                 y: -16
-                rotation: 5
                 width: 200
                 height: 150
                 font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
                 text: "Et le tigre est en toi!"
                 color: "yellow"
+            }
+            PostIt {
+                x: 459
+                y: 1367
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Pasadena\nCoin paisible de LA\nRésidentiel classe moyenne et artiste"
+                color: "mistyrose"
+            }
+            PostIt {
+                x: -171
+                y: 763
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Venice Beach\nPlage avec des flics en vélo."
+                color: "oldlace"
+            }
+            PostIt {
+                x: -166
+                y: 357
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "DownTown\n centre ville. QG du LAPD"
+                color: "mistyrose"
+            }
+            PostIt {
+                x: 675
+                y: -114
+                rotation: -5
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "South Central\n QG des gangs de LA"
+                color: "seashell"
+            }
+            PostIt {
+                x: -458
+                y: 1363
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "LAPD: RISQ\n Riot Squad"
+                color: "pink"
             }
             PolaroidImage {
                 id: columbo
@@ -911,7 +1087,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
             width: window.widthScreen
             height: window.heightScreen
             Behavior on opacity {
-                NumberAnimation{duration: root.opacityTime}
+                NumberAnimation{duration: window.opacityTime}
             }
             Rectangle {
                 x: 679
@@ -1104,7 +1280,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
             id: imageFinale
             anchors.fill: parent
             Behavior on opacity {
-                NumberAnimation{duration: root.opacityTime}
+                NumberAnimation{duration: window.opacityTime}
             }
             MovableImage {//Drapeau californie
                 x: 7661
@@ -1125,9 +1301,10 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 source: "qrc:/img/imgCops/logo_la.png"
             }
             MovableImage {//Panneau Los Angeles
-                x: 5987
-                y: 2202
+                x: 5972
+                y: 2151
                 source: "qrc:/img/imgCops/los-angelesPanneau.jpg"
+                scale: 1.5
             }
             MovableImage {//Hollywood
                 x: 4550
@@ -1140,6 +1317,18 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 y: 3804
                 scale: 0.7
                 source: "qrc:/img/imgCops/carte-la-gob---gp.jpg"
+            }
+            MovableImage {//Ground Zero
+                x: 5841
+                y: -384
+                source: "qrc:/img/imgCops/image-0.jpg"
+                scale: 0.6
+            }
+            MovableImage {//Ground Zero
+                x: 213
+                y: 1331
+                source: "qrc:/img/imgCops/boxer1.jpg"
+                scale: 1.6
             }
         }
 
@@ -1222,10 +1411,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 name: "nine"
                 when:idState == 8
                 extend: "eight"
-                PropertyChanges {
-                    target: grostext
-                    opacity: 1.0
-                }
+
             },
             State {
                 name: "ten"
@@ -1240,10 +1426,10 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                     //width: 1920
                     //height: 1080
                 }
-              /*  PropertyChanges {
+               PropertyChanges {
                     target: grostext
                     opacity: 1.0
-                }*/
+                }
                 PropertyChanges {
                     target: page1
                     opacity: 0.0
@@ -1284,6 +1470,11 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                     target: line1
                     opacity: 0.0
                 }
+                PropertyChanges {
+                    target: bodycount
+                    opacity: 0.0
+                }
+
             }
         ]
         transitions: [
@@ -1328,9 +1519,9 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
              font.pixelSize: 3400
              verticalAlignment: Text.AlignVCenter
              horizontalAlignment: Text.AlignHCenter
-             opacity: 1.0
+             opacity: 0.0
              Behavior on opacity {
-                 NumberAnimation{duration: root.opacityTime*1.5}
+                 NumberAnimation{duration: window.opacityTime*1.5}
              }
          }
         Keys.onSpacePressed:{

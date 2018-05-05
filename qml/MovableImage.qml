@@ -6,29 +6,24 @@ Item {
     property alias source: img.source
     implicitHeight: img.implicitHeight
     implicitWidth:  img.implicitWidth
+    onXChanged: console.log("x: "+x+" y: "+y)
+    onYChanged: console.log("x: "+x+" y: "+y)
+
     Image
     {
         id: img
         anchors.fill: parent
         fillMode: Image.PreserveAspectFit
     }
+    Drag.active: mouse.drag.active
 
     MouseArea {
+        id: mouse
         anchors.fill: parent
         property int previousX : 0
         property int previousY : 0
-        onPressed: {
-            previousX = mouse.x
-            previousY = mouse.y
-            parent.focus = true
-        }
-        onPositionChanged: {
-            root.x += (mouse.x-previousX)*root.scale
-            root.y += (mouse.y-previousY)*root.scale
-            previousX = mouse.x
-            previousY = mouse.y
-            console.log(root.text+" x:"+root.x+" y:"+root.y)
-        }
+
+        drag.target: parent
         onWheel: {
             if(wheel.angleDelta.y>0)
             {

@@ -11,6 +11,9 @@ Item {
     property alias color: rect.color
     property alias hAlign: footer.horizontalAlignment
     property alias vAlign: footer.verticalAlignment
+
+    onXChanged: console.log("x: "+x+" y: "+y)
+    onYChanged: console.log("x: "+x+" y: "+y)
     Rectangle
     {
         id:rect
@@ -32,20 +35,12 @@ Item {
 
 
     }
+    Drag.active: mouse.drag.active
+
     MouseArea {
+        id: mouse
         anchors.fill: parent
-        property int previousX : 0
-        property int previousY : 0
-        onPressed: {
-            previousX = mouse.x
-            previousY = mouse.y
-            parent.focus = true
-        }
-        onPositionChanged: {
-            root.x += mouse.x-previousX
-            root.y += mouse.y-previousY
-            console.log(root.text+" x:"+root.x+" y:"+root.y)
-        }
+        drag.target: parent
         onWheel: {
             if(wheel.angleDelta.y>0)
             {
