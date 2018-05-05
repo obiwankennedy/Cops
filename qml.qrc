@@ -20,8 +20,6 @@
         <file>qml/MovableImage.qml</file>
         <file>font/Amplify_PersonalUseOnly.ttf</file>
         <file>font/Chocolate Covered Raindrops.ttf</file>
-        <file>font/Chocolate Covered Raindrops BOLD.ttf</file>
-        <file>font/Chocolate Covered Raindrops Hollow.ttf</file>
         <file>font/DancingScript-Regular.otf</file>
         <file>font/Red Velvet - Demo.ttf</file>
         <file>img/logo/1500-rolisteam.png</file>
@@ -29,7 +27,6 @@
         <file>font/impact.ttf</file>
         <file>font/_TOP_SECRET.otf</file>
         <file>qml/Press.qml</file>
-        <file>img/a mod.png</file>
         <file>img/imgCops/874_af10.gif</file>
         <file>img/imgCops/503674Bureaux.jpg</file>
         <file>img/imgCops/babouin.jpg</file>
@@ -59,31 +56,30 @@
         <file>img/imgCops/tigre.jpg</file>
         <file>img/imgCops/trench_coat.jpg</file>
         <file>img/cops-jdr-lapd-commissariat.jpg</file>
-        <file>font/newspaper.dump/fonts/CloisterBlack.ttf</file>
-        <file>font/newspaper.dump/images/image_1.jpg</file>
         <file>img/imgCops/cessna.jpg</file>
         <file>img/imgCops/califorinia.jpg</file>
         <file>img/imgCops/dessinenfant.jpg</file>
         <file>img/imgCops/hollywood.jpeg</file>
-        <file>img/imgCops/logo_police.png</file>
+        <file>img/imgCops/logo_police.jpg</file>
         <file>img/imgCops/los-angelesPanneau.jpg</file>
         <file>img/imgCops/voiture_cops.jpg</file>
         <file>img/imgCops/car_crash_2.jpg</file>
         <file>img/imgCops/cadet_Police.jpg</file>
-        <file>img/imgCops/license.png</file>
+        <file>img/imgCops/license.jpg</file>
         <file>img/imgCops/applicationForm.JPG</file>
         <file>img/imgCops/speedfire.jpg</file>
-        <file>img/imgCops/speedfire.png</file>
         <file>img/imgCops/logo_la.png</file>
-        <file>img/imgCops/snipe.png</file>
-        <file>img/imgCops/123.png</file>
+        <file>img/imgCops/snipe.jpg</file>
+        <file>img/imgCops/123.jpg</file>
         <file>img/imgCops/carte-la-gob---gp.jpg</file>
         <file>img/imgCops/irish_tricolour-1.jpg</file>
         <file>img/imgCops/image-0.jpg</file>
-        <file>img/imgCops/image-1.jpg</file>
-        <file>img/imgCops/image-2.jpg</file>
-        <file>img/imgCops/image-3.jpg</file>
         <file>img/imgCops/boxer1.jpg</file>
-        <file>img/imgCops/wanted_car.png</file>
+        <file>img/imgCops/wanted_car.jpg</file>
+        <file>img/imgCops/badgesLAPD.png</file>
+        <file>font/newspaper.dump/fonts/CloisterBlack.ttf</file>
+        <file>font/newspaper.dump/images/image_1.jpg</file>
+        <file>img/imgCops/logo_police.png</file>
+        <file>img/cork_fin.jpg</file>
     </qresource>
 </RCC>

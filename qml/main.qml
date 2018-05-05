@@ -22,17 +22,14 @@ ApplicationWindow {
 
 
     FontLoader { id: amplify; source: "qrc:/font/Amplify_PersonalUseOnly.ttf" }
-    FontLoader { id: chocolate1; source: "qrc:/font/Chocolate Covered Raindrops BOLD.ttf" }
-    FontLoader { id: chocolate2; source: "qrc:/font/Chocolate Covered Raindrops Hollow.ttf" }
     FontLoader { id: chocolate3; source: "qrc:/font/Chocolate Covered Raindrops.ttf" }
     FontLoader { id: dancing; source: "qrc:/font/DancingScript-Regular.otf" }
-    FontLoader { id: redvelvet; source: "qrc:/font/Red Velvet - Demo.ttf" }
     FontLoader { id: topsecret; source: "qrc:/font/_TOP_SECRET.otf" }
     FontLoader { id: mjfont; source: "qrc:/font/impact.ttf" }
 
     Timer {
         id: time
-        interval: 5000
+        interval: 9000
         repeat: true
         onTriggered:{
             idState+=1
@@ -65,7 +62,7 @@ ApplicationWindow {
         }*/
 
         Image {
-            source: "qrc:/img/cork_fin.png"
+            source: "qrc:/img/cork_fin.jpg"
             fillMode: Image.Tile
             x:0
             y:0
@@ -377,7 +374,7 @@ ApplicationWindow {
                 x: 535
                 y:598
                 scale:0.5
-                source: "qrc:/img/imgCops/license.png"
+                source: "qrc:/img/imgCops/license.jpg"
             }
             PolaroidImage {//Hopital
                 x: 1296
@@ -622,7 +619,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 y: -961
               //  size: 200
                // text: "Wanted Voiture"
-                source: "qrc:/img/imgCops/wanted_car.png"
+                source: "qrc:/img/imgCops/wanted_car.jpg"
                 scale: 0.2
 
             }
@@ -730,6 +727,60 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 height:400
                 article1: "A Santa Maria police officer was hospitalized in stable condition Monday, a day after crashing his patrol car while responding to a foot chase involving another officer, according to police.Officer Damon Badenell, a Santa Maria resident who has been on the force for three years, was awake and sitting up in the intensive-care unit at Santa Barbara Cottage Hospital, according to police Lt. Rico Flores, head of the Police Department's traffic operations."
                 article2: "Badenell, who suffered several broken bones and non-life-threatening injuries, was expected to remain in the hospital for about a week, Flores said. Badenell was northbound on Broadway, just north of Main Street, at about 4:30 a.m. Sunday when he lost control of his patrol car, Flores said."
+            }
+            PostIt {
+                x: 1411
+                y: -234
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Kurt Rike\n patron du SWAT et papa de Lynn…"
+                color: "green"
+            }
+            PostIt {
+                x: 61
+                y: -576
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Quaestor post palatinarum\nsuper quod primos addensque \nquaestor quo conperto."
+                color: "mediumpurple"
+            }
+            PostIt {
+                x: 3576
+                y: -384
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Rendez-vous avec Bennett\npour autopsie"
+                color: "lightpink"
+            }
+            PostIt {
+                x: 638
+                y: -624
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Non possis tamen ille Quod \nsi potuit Non adiuves non autem potuit \nut consulem etiam."
+                color: "plum"
+            }
+            PostIt {
+                x: 1943
+                y: -241
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Publica iis videntur qui difficillime\n facile inventu graves difficiles\n facile ut est verae ut versantur."
+                color: "darkkhaki"
+            }
+            PostIt {
+                x: 2415
+                y: -583
+                width: 200
+                height: 150
+                font { family: dancing.name; pixelSize: 20; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Retrouvez Pocahontas"
+                color: "darkkhaki"
             }
           /*  MouseArea {
                 anchors.fill: parent
@@ -968,6 +1019,13 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 text: " Maison"
                 source: "qrc:/img/imgCops/house_max.jpg"
             }
+            PolaroidImage {//Badge
+                x: 1475
+                y: 4
+                size: 200
+                text: "Ne pas le perdre !!!"
+                source: "qrc:/img/imgCops/badgesLAPD.png"
+            }
             PolaroidImage {//sniper
                 x: 1542
                 y:546
@@ -976,8 +1034,8 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 source: "qrc:/img/imgCops/hecate.jpg"
             }
             PolaroidImage {//flag on ireland
-                x: 1463
-                y:13
+                x: 1551
+                y:1336
                 size: 200
                 text: " Radio, Bière Foot!"
                 source: "qrc:/img/imgCops/irish_tricolour-1.jpg"
@@ -1054,6 +1112,19 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 text: " Max O'Hara"
                 text2: "Columbo "
             }//
+            Press {
+                x: -1453
+                y: 2001
+                size: 1200
+                font { pixelSize: 60; weight: Font.Bold;  }//capitalization: Font.AllLowercase
+                text: "Carnage dans le jardin d'un COPS"//family: gothi.name;
+                date: "16 février 2031"
+                hasPhoto: true
+                height:450
+                photo: "qrc:/img/imgCops/cadet_Police.jpg"
+                article1: "Dimanche à Pasadena, un policier du COPS organisait dimanche une réunion de famille. D'après des sources proches du dossier ou de la maison, les invités ont utilisé leurs armes pour se divertir. Puis d'autres officiers du COPS ont fait irruption dans la demeure afin d'arrêter les invités fortement liés à le mafia irlandaise. L'operation a mal tournée quand un agent du COPS a été tué d'une balle dans la tête."
+                article2: "D'autres agents du LAPD venu en renfort ont trouvé la mort. Un porte parole du LAPD a regretté le manque de communication entre les services. Le COPS hébergeant l'événement aurait refusé de soustenir ses collègues. Il aurait été blessé pendant l'affrontement. Heureusement, des policiers étaient également présent à la fête. Ils ont protégé les civils. Bilan: 7 morts Mafieux et 20 flics."
+            }
 
           /*  MouseArea {
                 anchors.fill: parent
@@ -1072,7 +1143,6 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 onWheel: {
                     if(wheel.angleDelta.y>0)
                     {
-                        plate.scale -= 0.1
                     }
                     else
                         plate.scale += 0.1
@@ -1154,7 +1224,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 y: 942
                 size: 200
                 text: "Californian S90 \"spitfire\""
-                source: "qrc:/img/imgCops/speedfire.png"
+                source: "qrc:/img/imgCops/speedfire.jpg"
             }
         }
         Item {
@@ -1163,6 +1233,9 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
             y: 4000
             width: window.widthScreen
             height: window.heightScreen
+            Behavior on opacity {
+                NumberAnimation{duration: window.opacityTime}
+            }
             Rectangle {
                 x: 679
                 y: 50
@@ -1223,7 +1296,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                             Layout.maximumHeight: 150
                             Layout.maximumWidth: 150
                             Layout.alignment: Qt.AlignLeft
-                            source: "qrc:/img/imgCops/123.png"
+                            source: "qrc:/img/imgCops/123.jpg"
                         }
                     }
                 }
@@ -1269,7 +1342,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                             Layout.maximumHeight: 150
                             Layout.maximumWidth: 150
                             Layout.alignment: Qt.AlignLeft
-                            source: "qrc:/img/imgCops/snipe.png"
+                            source: "qrc:/img/imgCops/snipe.jpg"
                         }
                     }
                 }
@@ -1428,7 +1501,7 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 }
                PropertyChanges {
                     target: grostext
-                    opacity: 1.0
+                    opacity: 0.0
                 }
                 PropertyChanges {
                     target: page1
@@ -1483,11 +1556,11 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
                 to: "*"
                 ParallelAnimation {
                     PropertyAnimation { target: plate
-                        properties: "x"; duration: 1000 }
+                        properties: "x"; duration: 5000 }
                     PropertyAnimation { target: plate
-                        properties: "y"; duration: 1000 }
+                        properties: "y"; duration: 5000 }
                     PropertyAnimation { target: plate
-                        properties: "scale"; duration: 1000 }
+                        properties: "scale"; duration: 5000 }
                 }
             }
         ]
@@ -1525,7 +1598,6 @@ Continue reading the main story Related Coverage Small Plane Crashes on Long Isl
              }
          }
         Keys.onSpacePressed:{
-            console.log("presssed space")
             if(time.running)
             {
                 time.stop()

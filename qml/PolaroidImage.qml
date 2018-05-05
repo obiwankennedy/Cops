@@ -92,8 +92,6 @@ Item {
             }
             else
                 parent.rotation += 5
-
-            console.log(root.text+" rotation:"+parent.rotation)
         }
     }
 
